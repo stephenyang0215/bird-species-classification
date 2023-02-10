@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Service
+metadata: birdspecies_model
+spec:
+  type: LoadBalancer
+  selector:
+    app: birdspecies_model
+  ports:
+  - port: 80
+    targetPort: 6080
