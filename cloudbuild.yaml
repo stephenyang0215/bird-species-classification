@@ -17,5 +17,6 @@ steps:
   - --filename=Kubernetes/
   - --location=us-east1-b
   - --cluster=kube1 
+  timeout: 600s
 
 
