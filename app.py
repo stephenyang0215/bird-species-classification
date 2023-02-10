@@ -4,7 +4,6 @@ from io import BytesIO
 import tensorflow as tf
 import numpy as np
 import requests
-import time
 
 st.title("475 Bird Species - Image Classification")
 
@@ -13,7 +12,6 @@ def exec(model_path, class_path):
         lines = f.read().splitlines()
     classes = lines[0].split(',')
     with st.spinner('Wait for it...Loading ML model!'):
-        time.sleep(1)
         model = tf.keras.models.load_model(model_path)
         st.success('Done!')
     return model, classes

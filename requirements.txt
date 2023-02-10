@@ -5,6 +5,5 @@ pandas
 matplotlib
 numpy
 requests
-time
 
 #Run this file with - pip3 install -r requirements.txt
