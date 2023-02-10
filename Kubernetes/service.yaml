@@ -8,4 +8,4 @@ spec:
     app: birdspeciesmodel
   ports:
   - port: 80
-    targetPort: 6080
+    targetPort: 8501

@@ -16,4 +16,4 @@ spec:
       - name: container-app
         image: gcr.io/adroit-outlet-376521/app:v1
         ports:
-        - containerPort: 6080
+        - containerPort: 8501
