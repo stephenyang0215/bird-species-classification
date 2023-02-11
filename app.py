@@ -5,11 +5,11 @@ import tensorflow as tf
 import numpy as np
 import requests
 
-st.title("475 Bird Species - Image Classification")
+st.title("475 Bird Species Classification")
 dataset = 'https://www.kaggle.com/datasets/gpiosenka/100-bird-species'
 st.write("Kaggle Data source : [Link](%s)" % dataset)
 def exec(model_path, class_path):
-    with open() as f:
+    with open(class_path) as f:
         lines = f.read().splitlines()
     classes = lines[0].split(',')
     with st.spinner('Wait for it...Loading ML model!'):
