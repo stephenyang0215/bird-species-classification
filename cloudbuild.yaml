@@ -12,10 +12,8 @@ steps:
     ls -la
     ls -al models/
 - name: "gcr.io/cloud-builders/gke-deploy"
-  args: 
-  - run 
+  args:
+  - run
   - --filename=Kubernetes/
-  - --location=us-east1-b
-  - --cluster=kube1 
-
-
+  - --location=us-west1-b
+  - --cluster=kube1

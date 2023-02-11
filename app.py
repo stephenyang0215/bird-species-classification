@@ -6,7 +6,8 @@ import numpy as np
 import requests
 
 st.title("475 Bird Species - Image Classification")
-
+dataset = 'https://www.kaggle.com/datasets/gpiosenka/100-bird-species'
+st.write("Kaggle Data source : [Link](%s)" % dataset)
 def exec(model_path, class_path):
     with open() as f:
         lines = f.read().splitlines()
@@ -36,4 +37,5 @@ if path is not None:
       st.write(classes[label[0]])    
     image = Image.open(BytesIO(image_content))
     st.image(image)
-st.text("Provided species : ", classes)
+
+st.markdown(f"475 bird species names for image search : {classes}")

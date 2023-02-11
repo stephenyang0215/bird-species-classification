@@ -3,17 +3,17 @@ kind: Deployment
 metadata:
   name: birdspecies
 spec:
-  replicas: 20
+  replicas: 2
   selector:
-    matchLabels: 
+    matchLabels:
       app: birdspeciesmodel
   template:
     metadata:
       labels:
         app: birdspeciesmodel
-    spec: 
-      containers: 
-      - name: container-app
+    spec:
+      containers:
+      - name: image-app
         image: gcr.io/adroit-outlet-376521/app:v1
         ports:
         - containerPort: 8501
