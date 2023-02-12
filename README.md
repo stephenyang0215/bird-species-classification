@@ -12,3 +12,7 @@ The work directory in this repositary :<br />
 **GKE :** Management orchestration for docker containers on GCP. We use it to manage, deploy and scale containerized applications.<br />
 **models :** tensorflow-based trained model. It's built of transfer-learning with MobileNetV2 connected with one GlobalAveragePooling2D layer, dropout layer and output layer.<br />
 **app.py :** Python script of data apps which loads the model and runs prediction using streamlit to display the result.
+<p align="center">
+ <img src="https://github.com/stephenyang0215/bird-species-classification/blob/main/app_images/app_image1.png" width="650">
+ <img src="https://github.com/stephenyang0215/bird-species-classification/blob/main/app_images/app_image2.png" width="650">
+</p>
